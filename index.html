@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quem está fazendo aniversário?</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      background-color: #ffccff;
+      margin-top: 100px;
+    }
+    h1 {
+      color: #cc0066;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #ff66cc;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quem está fazendo aniversário?</h1>
+  <button id="botao">EU!</button>
+
+  <script>
+    const botao = document.getElementById('botao');
+    let movimentos = 0;
+
+    botao.addEventListener('mouseover', () => {
+      if (movimentos < 5) {
+        botao.style.top = Math.random() * 80 + 'vh';
+        botao.style.left = Math.random() * 80 + 'vw';
+        movimentos++;
+      }
+    });
+
+    botao.addEventListener('click', () => {
+      window.location.href = 'surpresa.html';
+    });
+
+    botao.style.top = "50%";
+    botao.style.left = "50%";
+  </script>
+</body>
+</html>
