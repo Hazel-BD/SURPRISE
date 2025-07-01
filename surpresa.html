@@ -8,13 +8,14 @@
     body {
       font-family: 'Comic Sans MS', cursive;
       text-align: center;
-      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      background: linear-gradient(to right, #1c1c1c, #3a3a3a);
       padding: 30px 15px;
       overflow: hidden;
+      color: #f0f0f0;
     }
 
     h1 {
-      color: #ff3399;
+      color: #ffffff;
       font-size: 8vw;
       margin-bottom: 10px;
       animation: fadeIn 2s ease-in-out;
@@ -22,7 +23,7 @@
 
     #mensagem {
       font-size: 5vw;
-      color: #cc0066;
+      color: #dddddd;
       margin-top: 20px;
       white-space: pre-line;
       animation: fadeIn 2s ease-in-out;
@@ -33,7 +34,7 @@
       width: 80%;
       max-width: 250px;
       border-radius: 20px;
-      box-shadow: 0 0 20px #ff99cc;
+      box-shadow: 0 0 20px #999;
       display: none;
       animation: pulse 2s infinite;
     }
@@ -75,8 +76,8 @@
   <div id="mensagem">
     Parabééééééns, diva! 🥳💕  
     Hoje o dia é todo seu ✨  
-    Que seu dia seja cheio de momentos incríveis, drinks e livro 📚🍹  
-    Você é uma estrela e merece o universo inteiro, então brilhe vadia 🌟
+    Hoje é o dia da sapatão mais original, da nega mais loira e de umas 
+    das melhores coisas que me ocorreu nos últimos meses, te amo!🌟
 
     <br><br>💬 *A sapatão original faz mais um ano homossexual de vida!* 🏳️‍🌈  
     <br><br>Te adoro demais!!! 💖  
@@ -89,8 +90,8 @@
       document.getElementById('foto').style.display = 'block';
     }, 2500);
 
-    const emojis = ['🎂', '📚', '🍹', '⚡', '🏳️‍🌈', '💖'];
-    for (let i = 0; i < 20; i++) {
+    const emojis = ['🏳️‍🌈', '🍹'];
+    for (let i = 0; i < 30; i++) {
       const emoji = document.createElement('div');
       emoji.className = 'emoji';
       emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
@@ -103,4 +104,3 @@
 
 </body>
 </html>
-
