@@ -1,27 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <title>🎉 Surpresa de Aniversário 🎁</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: 'Comic Sans MS', cursive;
       text-align: center;
       background: linear-gradient(to right, #ffe6f0, #fff0f5);
-      padding: 50px;
+      padding: 30px 15px;
       overflow: hidden;
     }
 
     h1 {
       color: #ff3399;
-      font-size: 36px;
-      margin-bottom: 20px;
+      font-size: 8vw;
+      margin-bottom: 10px;
       animation: fadeIn 2s ease-in-out;
     }
 
     #mensagem {
-      font-size: 20px;
+      font-size: 5vw;
       color: #cc0066;
       margin-top: 20px;
       white-space: pre-line;
@@ -30,7 +30,8 @@
 
     #foto {
       margin-top: 30px;
-      width: 250px;
+      width: 80%;
+      max-width: 250px;
       border-radius: 20px;
       box-shadow: 0 0 20px #ff99cc;
       display: none;
@@ -48,9 +49,10 @@
     }
 
     .emoji {
-      font-size: 36px;
+      font-size: 6vw;
       position: absolute;
       animation: float 5s infinite ease-in-out;
+      pointer-events: none;
     }
 
     @keyframes float {
@@ -58,19 +60,26 @@
       50% { transform: translateY(-40px); opacity: 0.7; }
       100% { transform: translateY(0); opacity: 1; }
     }
+
+    @media (min-width: 600px) {
+      h1 { font-size: 36px; }
+      #mensagem { font-size: 20px; }
+      .emoji { font-size: 36px; }
+    }
   </style>
 </head>
 <body>
 
-  <h1>🎊 TCHARAM!!! 🎂</h1>
+  <h1>🎊 TCHARAM, JÉSSICA!!! 🎂</h1>
 
   <div id="mensagem">
     Parabééééééns, diva! 🥳💕  
     Hoje o dia é todo seu ✨  
-    Que seu dia seja cheio de momentos incríveis, drinks e livro  
+    Que seu dia seja cheio de momentos incríveis, drinks e livro 📚🍹  
     Você é uma estrela e merece o universo inteiro, então brilhe vadia 🌟
 
-    <br><br> Te adoro demais!!! 💖  
+    <br><br>💬 *A sapatão original faz mais um ano homossexual de vida!* 🏳️‍🌈  
+    <br><br>Te adoro demais!!! 💖  
   </div>
 
   <img id="foto" src="foto.jpg" alt="Rainha do dia">
@@ -80,7 +89,7 @@
       document.getElementById('foto').style.display = 'block';
     }, 2500);
 
-    const emojis = ['🎂', '📚', '🍹', '⚡'];
+    const emojis = ['🎂', '📚', '🍹', '⚡', '🏳️‍🌈', '💖'];
     for (let i = 0; i < 20; i++) {
       const emoji = document.createElement('div');
       emoji.className = 'emoji';
@@ -94,3 +103,4 @@
 
 </body>
 </html>
+
